@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="static/dash.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="static/images/logo.png" alt="">
+            </div>
+
+            <span class="logo_name">Mass Emailing</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Recent Activity</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name"><a href="/">Logout</a></span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
+        
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <form action="/compose" method="get" id="form">
+                        <textarea name="emails" id="" cols="60" placeholder="Enter email that you want to send emails make sure every email is separated by comma" rows="10" style="padding: 10px;"></textarea>
+                        <button type="submit" id="signupBtn">Enter</button>
+                    </form>
+                    
+                    <script>
+                        let count =0
+                        const form = document.getElementById('form')
+                        function add(){
+                            let input = document.createElement('input')
+                            input.placeholder = "Email address"
+                            input.id =count.toString()
+                            count++;
+                            form.appendChild(input)
+                        }
+                       
+                    </script>
+                </div>
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+            
+                <div class="activities">
+                    <div class="data">
+                        <span class="data-title">Max No.of Mails <span class="data-list">500</span> </span>
+                        
+                    </div>
+                    <div class="data">
+                        <span class="data-title">Mails sent <span class="data-list">200</span></span>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Recent Activity</span>
+                </div>
+            
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Aasreetha</span>
+                        <span class="data-list">Geethika</span>
+                        <span class="data-list">Retu</span>
+                        <span class="data-list">Uditha</span>
+                        <span class="data-list">Ravali</span>
+                        <span class="data-list">Nagamma</span>
+                        <span class="data-list">Nageswari</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Email</span>
+                        <span class="data-list">aasreethakamireddy@gmail.com</span>
+                        <span class="data-list">yeminedigeethika@gmail.com</span>
+                        <span class="data-list">kamireddyaasreetha@gmail.com</span>
+                        <span class="data-list">Udithabattini302002@gmail.com</span>
+                        <span class="data-list">chsravali67@gmail.com</span>
+                        <span class="data-list">nagammathota2002@gmail.com</span>
+                        <span class="data-list">nagammathota202@gmail.com</span>
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Joined</span>
+                        <span class="data-list">2024-03-29</span>
+                        <span class="data-list">2024-03-29</span>
+                        <span class="data-list">2024-03-29</span>
+                        <span class="data-list">2024-03-29</span>
+                        <span class="data-list">2024-03-29</span>
+                        <span class="data-list">2024-03-29</span>
+                        <span class="data-list">2024-03-29</span>
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Type</span>
+                        <span class="data-list">New</span>
+                        <span class="data-list">Member</span>
+                        <span class="data-list">Member</span>
+                        <span class="data-list">New</span>
+                        <span class="data-list">Member</span>
+                        <span class="data-list">New</span>
+                        <span class="data-list">Member</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

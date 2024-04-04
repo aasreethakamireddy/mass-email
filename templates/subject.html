@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0">
+        <title>emailing</title>
+        <link rel="stylesheet" href="static/subject.css">
+    </head>
+    <body>
+        <div class="contact-container">
+            <form action="/sendemail" method="post" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Mailing</h2>
+                    <hr>
+                    <p>{{ack}}</p>
+                </div>
+                <input type="text" name="email" placeholder="Your Email" value="{{data}}" class="contact-inputs">
+                <input type="text" name="subject" placeholder="Your subject" class="contact-inputs" required>
+                <textarea name="msg" placeholder="Your message" class="contact-inputs" required></textarea>
+                <button type="submit">Send<img src="assets/arrow_icon.png" alt=""></button>
+            </form>
+            <div class="contact-right">
+                    <img src="/assets/right_img.png" alt="">
+            </div>      
+        </div>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container{
+    min-height: 100vh;
+    background-image:  url(/static/images/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 80%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}  
+.form-box h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #3c00a0;
+    position: relative;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.input-text {
+    width: 300px;
+    height: 50px;
+    font-size: 13px;
+    font-family: "Roboto";
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+input{
+    width: 100%;
+    background: tranparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background:blue;
+    color:white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.btn-field button a {
+    color: white;
+    font-size: 13px;
+}
+
+.input-group{
+    height: 280px;
+}
+
+.btn-field button.disable{
+    background:#eaeaea;
+    color:#555;
+}
+
+.text{
+     margin-top:20px;
+}
+.text-disable {
+   display:none;
+}
